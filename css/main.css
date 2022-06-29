@@ -20,6 +20,11 @@ img {
     src: url('../fonts/comfortaa.ttf');
 }
 
+@keyframes header_welcomebanner_anim {
+    0% {left: -85vmin;}
+    100% {left: 0vmin;}
+}
+
 ::-webkit-scrollbar {
     width: 1vmin;
 }
@@ -78,7 +83,9 @@ img {
 
 #header_backgroundimage {
     width: 100%;
+
     opacity: .45;
+    transition: opacity 1.2s ease;
 }
 
 #main_intro {
@@ -102,11 +109,16 @@ img {
 
     left: 0vmin;
     top: 20vmin;
+
     padding: 2vmin;
+    font-size: 20px;
 
     background: #2b3030;
     font-family: 'Comfortaa';
 
     border-radius: 5px;
     border: 2.55px solid #28acac;
+
+    animation: header_welcomebanner_anim forwards;
+    animation-duration: 1.85s;
 }
