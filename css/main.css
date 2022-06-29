@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    background: rgb(20, 20, 20);
+}
+
+img {
+    max-width: 100%;
+    max-height: 80vmin;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/comfortaa.ttf');
+}
+
+::-webkit-scrollbar {
+    width: 1vmin;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(71, 71, 71);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #28acac;
+}
+
+#navbar_maincontainer {
+    height: 55%;
+    padding: 18px;
+
+    display: flex;
+    align-items: center;
+    font-family: 'Comfortaa';
+
+    background: #2b3030;
+    border-bottom: 2.55px solid #28acac;
+}
+
+.navbar_button:hover {
+    transition: .2s ease-in-out;
+
+    letter-spacing: 1.35px;
+    color: #24f8f8 !important;
+}
+
+.navbar_button {
+    font-size: 12.55px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    margin-left: 10px;
+    margin-right: 15px;
+    letter-spacing: .85px;
+
+    cursor: pointer;
+    color: white;
+}
+
+.navbar_icon {
+    font-size: 23px;
+}
+
+#navbar_myname {
+    font-size: 19px;
+    text-transform: none;
+
+    margin-left: 0px;
+    margin-right: 25px;
+}
+
+#header_backgroundimage {
+    width: 100%;
+    opacity: .45;
+}
+
+#main_intro {
+    display: flex;
+    justify-content: center;
+
+    padding: 75px;
+
+    color: white;
+    font-family: 'Comfortaa';
+}
+
+#header_introheadingtext {
+    font-size: 35px;
+    letter-spacing: 1.1px;
+}
+
+#header_welcomebanner {
+    position: absolute;
+    color: white;
+
+    left: 0vmin;
+    top: 20vmin;
+    padding: 2vmin;
+
+    background: #2b3030;
+    font-family: 'Comfortaa';
+
+    border-radius: 5px;
+    border: 2.55px solid #28acac;
+}
