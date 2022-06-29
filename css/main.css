@@ -8,11 +8,18 @@ body {
     -webkit-user-select: none;
 
     background: rgb(20, 20, 20);
+
+    --main-background-color: #2b3030;
+    --main-border-color: #28acac;
 }
 
 img {
     max-width: 100%;
     max-height: 80vmin;
+}
+
+main {
+    min-height: 80vmin;
 }
 
 @font-face {
@@ -34,7 +41,7 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #28acac;
+    background: var(--main-border-color);
 }
 
 #navbar_maincontainer {
@@ -45,13 +52,11 @@ img {
     align-items: center;
     font-family: 'Comfortaa';
 
-    background: #2b3030;
-    border-bottom: 2.55px solid #28acac;
+    background: var(--main-background-color);
+    border-bottom: 2.55px solid var(--main-border-color);
 }
 
 .navbar_button:hover {
-    transition: .2s ease-in-out;
-
     letter-spacing: 1.35px;
     color: #24f8f8 !important;
 }
@@ -67,6 +72,11 @@ img {
 
     cursor: pointer;
     color: white;
+    transition: .2s ease-in-out;
+}
+
+.navbar_icon:hover {
+    transform: scale(1.25);
 }
 
 .navbar_icon {
@@ -92,7 +102,7 @@ img {
     display: flex;
     justify-content: center;
 
-    padding: 75px;
+    padding: 45px;
 
     color: white;
     font-family: 'Comfortaa';
@@ -110,15 +120,49 @@ img {
     left: 0vmin;
     top: 20vmin;
 
-    padding: 2vmin;
+    padding: 15px;
     font-size: 20px;
 
-    background: #2b3030;
+    background: var(--main-background-color);
     font-family: 'Comfortaa';
 
     border-radius: 5px;
-    border: 2.55px solid #28acac;
+    border: 2.55px solid var(--main-border-color);
 
     animation: header_welcomebanner_anim forwards;
     animation-duration: 1.85s;
+}
+
+.main_section::-webkit-scrollbar {
+    display: none;
+}
+
+.main_section {
+    width: 40%;
+    height: 50%;
+
+    padding: 18.5px;
+    position: absolute;
+
+    color: white;
+    font-family: 'Comfortaa';
+    font-size: 15.5px;
+
+    overflow-y: scroll;
+    background: var(--main-background-color);
+    border-radius: 10px;
+    border: 2.55px solid var(--main-border-color);
+}
+
+.main_section > span {
+    line-height: 25px;
+}
+
+#main_leftsection {
+    left: 3.5vmin;
+}
+
+#main_rightsection {
+    right: 3.5vmin;
+    padding-top: 0px;
 }
