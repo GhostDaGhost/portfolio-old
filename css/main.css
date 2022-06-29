@@ -19,7 +19,7 @@ img {
 }
 
 main {
-    min-height: 80vmin;
+    min-height: 55vmin;
 }
 
 @font-face {
@@ -133,16 +133,20 @@ main {
     animation-duration: 1.85s;
 }
 
-.main_section::-webkit-scrollbar {
+#main_outersection {
+    display: flex;
+    justify-content: center;
+}
+
+#main_section::-webkit-scrollbar {
     display: none;
 }
 
-.main_section {
-    width: 40%;
-    height: 50%;
+#main_section {
+    width: 80%;
 
     padding: 18.5px;
-    position: absolute;
+    /* position: absolute; */
 
     color: white;
     font-family: 'Comfortaa';
@@ -150,19 +154,65 @@ main {
 
     overflow-y: scroll;
     background: var(--main-background-color);
+
     border-radius: 10px;
     border: 2.55px solid var(--main-border-color);
 }
 
-.main_section > span {
+#main_section > span {
     line-height: 25px;
 }
 
-#main_leftsection {
+/*#main_leftsection {
     left: 3.5vmin;
 }
 
 #main_rightsection {
     right: 3.5vmin;
     padding-top: 0px;
+}*/
+
+#main_currentproject_links {
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main_experiencetime {
+    color: rgb(236, 188, 28);
+}
+
+.main_project_link:hover {
+    color: #00ffff !important;
+}
+
+.main_project_link {
+    color: #25caca;
+
+    text-decoration: none;
+    transition: .2s ease-in-out;
+}
+
+#main_projectname_prp {
+    color: #22ffff;
+}
+
+#main_projectname_soe {
+    color: rgb(240, 69, 69);
+}
+
+.navbar_footer {
+    margin-top: 54px;
+
+    border-top: 2.55px solid var(--main-border-color);
+    border-bottom: none !important;   
+}
+
+.navbar_footer > span {
+    color: white;
+
+    font-size: 17px;
+    margin-right: 35px;
 }
